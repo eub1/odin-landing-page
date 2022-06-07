@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 900px;
+  height: 100vh; /* viewport height*/
+  margin: auto;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*style*/
+
+.header, 
+.containerone {
+background-color: #1f2937;
+padding: 16px 100px;
+justify-content: space-between;
+align-items: center;
+}
+
+.containeroneleft { 
+max-width: 300px;
+display: flex;
+flex-direction: column;
+align-items: flex-start ;
+}
+.containertwo  {
+  background-color: #e5e7eb;
+}
+
+button,
+.action { 
+  background-color: #3882f6;
+} 
+
+button {  
+  font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    padding: 8px 16px;
+    margin: 8px 0;
+}
+
+/*header*/
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.containerone {
+  display: flex;
+  height: 300px;
+}
+
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+a {
+  font-size: 12px;
+  background: white;
+  padding: 8px;
+  /* this removes the line under the links */
+  text-decoration: none;
+}
