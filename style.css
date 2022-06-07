@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+div { 
+  border: solid red 1px;
+}
 
 body {
   max-width: 900px;
@@ -13,28 +16,68 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
+  flex-shrink: 0;
 }
 
 /*style*/
 
 .header, 
-.containerone {
+.containerone,
+.footer {
 background-color: #1f2937;
-padding: 16px 100px;
+padding: 0px 100px;
+display: flex;
 justify-content: space-between;
 align-items: center;
 }
 
 .containeroneleft { 
-max-width: 300px;
+/*max-width: 400px;*/
+padding: 16px;
 display: flex;
 flex-direction: column;
 align-items: flex-start ;
 }
+
+.awesometitle { 
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #F9FAF8;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+.awesometext,
+a {
+font-size: 18px;
+color: #E5E7EB;
+/* this removes the line under the links */
+  text-decoration: none;
+}
+
 .containertwo  {
   background-color: #e5e7eb;
+}
+
+/*RANDOM*/
+
+.randomtitle {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1F2937;
+  padding: 16px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: light;
+  color: #1F2937;
 }
 
 button,
@@ -55,13 +98,18 @@ button {
 
 .header,
 .footer {
+  height: 50px;
   display: flex;
   align-items: center;
 }
+.footer { 
+  justify-content: center;
+}
 
-.containerone {
+.containerone, .random, .containertwo, {
   display: flex;
   height: 300px;
+  align-items: space-between;
 }
 
 
@@ -72,12 +120,4 @@ ul {
   margin: 0;
   padding: 0;
   gap: 8px;
-}
-
-a {
-  font-size: 12px;
-  background: white;
-  padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
 }
