@@ -65,18 +65,12 @@ text-decoration: none;
 }
 
 
-.containertwo  {
-  background-color: #e5e7eb;
-  display: flex;
-  align-items: space-between;
-}
-
 /*RANDOM*/
-.random {
+.random,
+.containertwo {
   display: flex;
   flex-direction: column; 
-  padding: 4% 15%;
- 
+  padding: 4% 15%; 
 }
 
 .randomtitle {
@@ -105,12 +99,25 @@ text-decoration: none;
   text-align: center;
 }
 
+/*quote*/
+.containertwo {
+  background-color: #e5e7eb;
+  justify-content: center;
+
+}
 
 .quote {
   font-size: 36px;
   font-weight: light;
   color: #1F2937;
 }
+
+.cite {
+  text-align: right;
+  padding: 10px 0;
+}
+
+/*ACTION*/
 
 button,
 .action { 
