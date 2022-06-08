@@ -47,7 +47,7 @@ a {
 font-size: 18px;
 color: #E5E7EB;
 /* this removes the line under the links */
-  text-decoration: none;
+text-decoration: none;
 }
 
 
@@ -55,7 +55,6 @@ color: #E5E7EB;
     border: burlywood solid 2px;
     display: inline-flex;
     justify-content: center;
-
 }
 
 /* Set containers to the same responsive size*/
@@ -68,9 +67,16 @@ color: #E5E7EB;
 
 .containertwo  {
   background-color: #e5e7eb;
+  display: flex;
+  align-items: space-between;
 }
 
 /*RANDOM*/
+.random {
+  display: flex;
+  flex-direction: column; 
+  padding: 0px 18%;
+}
 
 .randomtitle {
   font-size: 36px;
@@ -79,12 +85,22 @@ color: #E5E7EB;
   padding: 16px;
   text-align: center;
 }
-
-
-.card {
+.randomimg {
+  width: 95%;
+  border: solid 3px #3882f6;
+  border-radius: 8px; /*to make the border corner rounded*/
   display: flex;
- align-items: center;
+  flex: 1 0 0%;
+  margin: auto; /*to center*/
 }
+
+.random-content {
+  display: flex;
+  align-items: center;  
+  gap: 8px;
+}
+
+
 .quote {
   font-size: 36px;
   font-weight: light;
@@ -110,11 +126,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.random, .containertwo, {
-  display: flex;
-  align-items: space-between;
 }
 
 
