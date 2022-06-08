@@ -1,9 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-div { 
+/*div { 
   border: solid red 1px;
-}
+}*/
 
 body {
   max-width: 70vw; /*To make it more responsive, used vw (viewport width), to be the 70% (this way i give the margins)*/
@@ -22,7 +22,7 @@ body {
 .containerone,
 .footer {
 background-color: #1f2937;
-padding: 0px 10%; /*I set the side padding in % so it's responsive, if not is a fixed size */
+padding: 0 10%; /*I set the side padding in % so it's responsive, if not is a fixed size */
 display: flex;
 align-items: center;
 }
@@ -52,9 +52,9 @@ text-decoration: none;
 
 
 .containeroneright {
-    border: burlywood solid 2px;
     display: inline-flex;
     justify-content: center;
+    background-color: rgb(129, 129, 129);
 }
 
 /* Set containers to the same responsive size*/
@@ -75,7 +75,8 @@ text-decoration: none;
 .random {
   display: flex;
   flex-direction: column; 
-  padding: 0px 18%;
+  padding: 4% 15%;
+ 
 }
 
 .randomtitle {
@@ -84,10 +85,11 @@ text-decoration: none;
   color: #1F2937;
   padding: 16px;
   text-align: center;
+  margin-bottom: 16px;
 }
 .randomimg {
   width: 95%;
-  border: solid 3px #3882f6;
+  border: solid 4px #3882f6;
   border-radius: 8px; /*to make the border corner rounded*/
   display: flex;
   flex: 1 0 0%;
@@ -97,7 +99,10 @@ text-decoration: none;
 .random-content {
   display: flex;
   align-items: center;  
-  gap: 8px;
+  gap: 4%;
+}
+.randomsubtext {
+  text-align: center;
 }
 
 
