@@ -54,6 +54,7 @@ text-decoration: none;
 }
 .containeroneleft {
   margin-right: 10px;
+  overflow: auto;
 }
 
 .containeroneright {
