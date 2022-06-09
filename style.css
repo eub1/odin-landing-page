@@ -6,7 +6,7 @@ html {
 }*/
 
 body {
-  /*max-width: 70vw; To make it more responsive, used vw (viewport width), to be the 70% (this way I set the margins)*/
+  /*max-width: 70vw; To make it more responsive, used vw (viewport width), to be the 70% (this way I set the margins)*/ /*didn't use it, because the assignment was with no margin*/
   height: 100vh;  /*viewport height*/
   margin: auto;
   /* overflow: hidden; this doesn't let the page scroll down when the content overflows the viewport height */
@@ -49,10 +49,15 @@ color: #E5E7EB;
 text-decoration: none;
 }
 
+.awesometext{
+  margin: 20px 0;
+}
+.containeroneleft {
+  margin-right: 10px;
+}
 
 .containeroneright {
     display: inline-flex;
-    justify-content: center;
     background-color: rgb(129, 129, 129);
 }
 
@@ -61,6 +66,7 @@ text-decoration: none;
 .containeroneright {
   flex: 1 0 0%; /* To space evenly the container: flex-basis: 0%; (until this, containeroneleft overflowed Rick and took more space. With 0% I'm telling to ignore it's original width and height, making both containers evenly, start from the same basis*/
   height: 50%; /* Both containers occupy the 50% height of the container, making them evenly height. Could be any metric */
+  justify-content: center;
 }
 
 
@@ -93,6 +99,7 @@ text-decoration: none;
   display: flex;
   align-items: center;  
   gap: 4%;
+  justify-content: center;
 }
 .randomsubtext {
   text-align: center;
@@ -102,7 +109,7 @@ text-decoration: none;
 .containertwo {
   background-color: #e5e7eb;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
 }
 
 .quote {
