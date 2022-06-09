@@ -6,7 +6,7 @@ html {
 }*/
 
 body {
-  max-width: 70vw; /*To make it more responsive, used vw (viewport width), to be the 70% (this way i give the margins)*/
+  /*max-width: 70vw; To make it more responsive, used vw (viewport width), to be the 70% (this way I set the margins)*/
   height: 100vh;  /*viewport height*/
   margin: auto;
   /* overflow: hidden; this doesn't let the page scroll down when the content overflows the viewport height */
@@ -19,8 +19,7 @@ body {
 /*style*/
 
 .header, 
-.containerone,
-.footer {
+.containerone {
 background-color: #1f2937;
 padding: 0 10%; /*I set the side padding in % so it's responsive, if not is a fixed size */
 display: flex;
@@ -67,10 +66,10 @@ text-decoration: none;
 
 /*RANDOM*/
 .random,
-.containertwo {
+.containerthree {
   display: flex;
   flex-direction: column; 
-  padding: 4% 15%; 
+  padding: 4% 15%;
 }
 
 .randomtitle {
@@ -102,8 +101,8 @@ text-decoration: none;
 /*quote*/
 .containertwo {
   background-color: #e5e7eb;
-  justify-content: center;
-
+  display: flex;
+  justify-content: stretch;
 }
 
 .quote {
@@ -124,20 +123,39 @@ button,
   background-color: #3882f6;
 } 
 
-button {  
-  font-family: Roboto, sans-serif;
+.action {
+    padding: 4% 8%;
+    /*I set the side padding in % so it's responsive, if not is a fixed size */
+    display: flex;
+    color: #F9FAF8;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin: 5% 10%;
+}
+.call {
+  font-size: larger;
+  font-weight: bold;
+}
+.callsubtext {
+  align-self: flex-start;
+}
+button {
+    width: 100px;
     border: none;
     border-radius: 8px;
-    background: #eee;
-    padding: 8px 16px;
+    padding: 4px 8px;
     margin: 8px 0;
+    color: #F9FAF8;
+  }
+
+.signuptwo {
+  border: solid 1px #F9FAF8;
 }
 
-
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #1f2937;
+  text-align: center;
+  padding: 20px 0;
 }
 
 
